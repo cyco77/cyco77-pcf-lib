@@ -1,0 +1,118 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "jsx-a11y",
+    "prettier",
+    "@typescript-eslint/eslint-plugin",
+    "react",
+    "import"
+  ],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "ComponentFramework": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "global-require": "warn",
+    "import/no-extraneous-dependencies": "warn",
+    "import/order": "warn",
+    "no-underscore-dangle": "warn",
+    "prefer-destructuring": "off",
+    "no-console": "off",
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "react/jsx-indent": [
+      "off"
+    ],
+    "react/jsx-indent-props": [
+      "off"
+    ],
+    "react/require-default-props": [
+      "off"
+    ],
+    "react/jsx-curly-spacing": [
+      "off"
+    ],
+    "react/jsx-curly-newline": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-access-state-in-setstate": "warn",
+    "react/default-props-match-prop-types": "off",
+    "react/no-deprecated": "warn",
+    "react/no-array-index-key": "warn",
+    "import/no-cycle": "warn",
+    "react/no-unused-state": "warn",
+    "import/no-named-as-default": "warn",
+    "import/named": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [
+          "^MyTypes$"
+        ]
+      }
+    ],
+    "react/prop-types": "warn",
+    "no-unused-vars": 0,
+    "react/no-unused-prop-types": "warn",
+    "prefer-promise-reject-errors": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "spaced-comment": "warn",
+    "@typescript-eslint/no-useless-constructor": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/default-param-last": 0
+  },
+  "settings": {
+    "import/core-modules": [
+      "@fluentui/react"
+    ],
+    "version": "detect",
+    "react": {
+      "version": "detect"
+    }
+  }
+}

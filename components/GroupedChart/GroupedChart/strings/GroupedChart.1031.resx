@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GroupedChart" xml:space="preserve">
+    <value>Grouped Chart</value>
+  </data>
+  <data name="GroupedChartDescription" xml:space="preserve">
+    <value>Stellt Datensaetze als gruppiertes Diagramm mit Summen- oder Durchschnittsaggregation dar.</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>Diagrammdaten</value>
+  </data>
+  <data name="Description_SelectTheTableAndViewToVisualize" xml:space="preserve">
+    <value>Waehlen Sie die Tabelle und Ansicht aus, deren Datensaetze im Diagramm dargestellt werden sollen.</value>
+  </data>
+  <data name="ChartType" xml:space="preserve">
+    <value>Diagrammtyp</value>
+  </data>
+  <data name="Description_SelectWhichChartTypeShouldBeRendered" xml:space="preserve">
+    <value>Waehlen Sie aus, ob das Diagramm als Doughnut, halber Doughnut, Pie, vertikaler Trichter oder horizontaler Trichter dargestellt werden soll.</value>
+  </data>
+  <data name="ChartType_Doughnut" xml:space="preserve">
+    <value>Doughnut</value>
+  </data>
+  <data name="ChartType_HalfDoughnut" xml:space="preserve">
+    <value>Halber Doughnut</value>
+  </data>
+  <data name="ChartType_Pie" xml:space="preserve">
+    <value>Pie</value>
+  </data>
+  <data name="ChartType_FunnelVertical" xml:space="preserve">
+    <value>Trichter vertikal</value>
+  </data>
+  <data name="ChartType_FunnelHorizontal" xml:space="preserve">
+    <value>Trichter horizontal</value>
+  </data>
+  <data name="GroupByField" xml:space="preserve">
+    <value>Feld fuer Gruppierung</value>
+  </data>
+  <data name="Description_EnterTheLogicalNameOfTheFieldUsedForGrouping" xml:space="preserve">
+    <value>Geben Sie den logischen Namen des Feldes ein, dessen Werte die Diagrammsegmente bilden sollen.</value>
+  </data>
+  <data name="AggregationMode" xml:space="preserve">
+    <value>Aggregationsmodus</value>
+  </data>
+  <data name="Description_SelectWhetherTheChartUsesSumOrAverage" xml:space="preserve">
+    <value>Waehlen Sie aus, ob das numerische Feld pro Gruppe als Summe oder als Durchschnitt aggregiert werden soll.</value>
+  </data>
+  <data name="AggregationMode_Sum" xml:space="preserve">
+    <value>Summe</value>
+  </data>
+  <data name="AggregationMode_Average" xml:space="preserve">
+    <value>Durchschnitt</value>
+  </data>
+  <data name="ValueField" xml:space="preserve">
+    <value>Wertefeld</value>
+  </data>
+  <data name="Description_EnterTheLogicalNameOfTheNumericFieldToAggregate" xml:space="preserve">
+    <value>Geben Sie den logischen Namen des numerischen Feldes ein, das summiert oder gemittelt werden soll.</value>
+  </data>
+  <data name="ShowDataNextToChart" xml:space="preserve">
+    <value>Daten neben Diagramm anzeigen</value>
+  </data>
+  <data name="Description_ShowDataNextToChart" xml:space="preserve">
+    <value>Zeigt rechts neben dem Diagramm ein kleines Datenraster mit den gruppierten Werten an.</value>
+  </data>
+  <data name="Validation_DatasetRequired" xml:space="preserve">
+    <value>Waehlen Sie zuerst ein Dataset aus, bevor das Diagramm dargestellt werden kann.</value>
+  </data>
+  <data name="Validation_GroupByFieldRequired" xml:space="preserve">
+    <value>Geben Sie einen logischen Feldnamen in Feld fuer Gruppierung ein.</value>
+  </data>
+  <data name="Validation_ValueFieldRequired" xml:space="preserve">
+    <value>Geben Sie einen logischen Feldnamen in Wertefeld ein.</value>
+  </data>
+  <data name="Validation_NoChartDataMessage" xml:space="preserve">
+    <value>Fuer das aktuelle Dataset und die aktuelle Konfiguration sind keine Diagrammdaten verfuegbar.</value>
+  </data>
+  <data name="Validation_GenericConfigurationMessage" xml:space="preserve">
+    <value>Pruefen Sie die Diagrammkonfiguration. Eine oder mehrere Einstellungen konnten nicht gelesen werden, daher konnte das Diagramm nicht gerendert werden.</value>
+  </data>
+  <data name="GroupLabel_Empty" xml:space="preserve">
+    <value>(Leer)</value>
+  </data>
+  <data name="EmptyState_NoData" xml:space="preserve">
+    <value>Keine Daten</value>
+  </data>
+</root>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RelatedRecordsCount" xml:space="preserve">
+    <value>Anzahl verknuepfter Datensaetze</value>
+  </data>
+  <data name="RelatedRecordsCount description" xml:space="preserve">
+    <value>Zeigt die Anzahl der Datensaetze aus der konfigurierten verknuepften Tabelle und Ansicht an.</value>
+  </data>
+  <data name="RelatedRecords" xml:space="preserve">
+    <value>Verknuepfte Datensaetze</value>
+  </data>
+  <data name="Description_SelectTheRelatedTableAndViewToCount" xml:space="preserve">
+    <value>Waehlen Sie die verknuepfte Tabelle und Ansicht aus, deren Datensaetze gezaehlt werden sollen.</value>
+  </data>
+  <data name="ColorMode" xml:space="preserve">
+    <value>Farbe der Zahl</value>
+  </data>
+  <data name="Description_SelectWhichStandardColorToUseForTheCount" xml:space="preserve">
+    <value>Waehlen Sie die Farbe fuer die angezeigte Zahl aus.</value>
+  </data>
+  <data name="ColorMode_BrandBlue" xml:space="preserve">
+    <value>Markenblau</value>
+  </data>
+  <data name="ColorMode_Slate" xml:space="preserve">
+    <value>Schiefergrau</value>
+  </data>
+  <data name="ColorMode_Emerald" xml:space="preserve">
+    <value>Smaragd</value>
+  </data>
+  <data name="ColorMode_Violet" xml:space="preserve">
+    <value>Violett</value>
+  </data>
+  <data name="ColorMode_Berry" xml:space="preserve">
+    <value>Beere</value>
+  </data>
+  <data name="ColorMode_Amber" xml:space="preserve">
+    <value>Bernstein</value>
+  </data>
+  <data name="ColorMode_Custom" xml:space="preserve">
+    <value>Benutzerdefiniert</value>
+  </data>
+  <data name="CustomColorHex" xml:space="preserve">
+    <value>Benutzerdefinierter Hex-Farbwert</value>
+  </data>
+  <data name="Description_EnterAHexColorWhenCustomColorIsSelected" xml:space="preserve">
+    <value>Nur erforderlich, wenn Benutzerdefiniert als Farbe gewaehlt ist. Geben Sie einen Hex-Farbwert wie #0f6cbd ein.</value>
+  </data>
+  <data name="SubtitleMode" xml:space="preserve">
+    <value>Untertitelmodus</value>
+  </data>
+  <data name="Description_SelectHowTheSubtitleShouldBeBuilt" xml:space="preserve">
+    <value>Waehlen Sie aus, ob kein Untertitel, ein freier Text, der Ansichtsname oder der lokalisierte Entitaetsname zusammen mit dem Ansichtsnamen angezeigt werden soll.</value>
+  </data>
+  <data name="SubtitleMode_None" xml:space="preserve">
+    <value>Keiner</value>
+  </data>
+  <data name="SubtitleMode_FreeText" xml:space="preserve">
+    <value>Freitext</value>
+  </data>
+  <data name="SubtitleMode_ViewName" xml:space="preserve">
+    <value>Ansichtsname</value>
+  </data>
+  <data name="SubtitleMode_EntityAndView" xml:space="preserve">
+    <value>Entitaet | Ansichtsname</value>
+  </data>
+  <data name="SubtitleText" xml:space="preserve">
+    <value>Untertiteltext</value>
+  </data>
+  <data name="Description_EnterCustomSubtitleTextForFreeTextMode" xml:space="preserve">
+    <value>Nur erforderlich, wenn Freitext als Untertitelmodus gewaehlt ist. Der Wert dient ausserdem als Rueckfalltext, wenn kein Entitaets- oder Ansichtsname verfuegbar ist.</value>
+  </data>
+  <data name="Validation_CustomColorHexRequired" xml:space="preserve">
+    <value>Geben Sie einen Hex-Farbwert an, wenn Benutzerdefiniert als Farbe gewaehlt ist.</value>
+  </data>
+  <data name="Validation_CustomColorHexInvalid" xml:space="preserve">
+    <value>Der benutzerdefinierte Hex-Farbwert muss gueltig sein, z. B. #0f6cbd oder #06c.</value>
+  </data>
+  <data name="Validation_SubtitleTextRequired" xml:space="preserve">
+    <value>Geben Sie einen Untertiteltext an, wenn Freitext als Untertitelmodus gewaehlt ist.</value>
+  </data>
+  <data name="Validation_GenericConfigurationMessage" xml:space="preserve">
+    <value>Pruefen Sie die Konfiguration der Komponente. Eine oder mehrere optionale Einstellungen konnten nicht gelesen werden, daher werden sichere Standardwerte verwendet.</value>
+  </data>
+</root>

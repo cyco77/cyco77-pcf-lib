@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj": {}
+  },
+  "projects": {
+    "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
+        "projectName": "GroupedChart",
+        "projectPath": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
+        "packagesPath": "/Users/lars.hildebrandt/.nuget/packages/",
+        "outputPath": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/lars.hildebrandt/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

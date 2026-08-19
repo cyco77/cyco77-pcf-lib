@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GroupedChart" xml:space="preserve">
+    <value>Grouped Chart</value>
+  </data>
+  <data name="GroupedChartDescription" xml:space="preserve">
+    <value>Displays dataset records as a grouped chart using sum or average aggregation.</value>
+  </data>
+  <data name="ChartData" xml:space="preserve">
+    <value>Chart data</value>
+  </data>
+  <data name="Description_SelectTheTableAndViewToVisualize" xml:space="preserve">
+    <value>Select the table and view whose records should be visualized in the chart.</value>
+  </data>
+  <data name="ChartType" xml:space="preserve">
+    <value>Chart type</value>
+  </data>
+  <data name="Description_SelectWhichChartTypeShouldBeRendered" xml:space="preserve">
+    <value>Select whether the chart should be rendered as a doughnut chart, a half doughnut chart, a pie chart, a vertical funnel chart, or a horizontal funnel chart.</value>
+  </data>
+  <data name="ChartType_Doughnut" xml:space="preserve">
+    <value>Doughnut</value>
+  </data>
+  <data name="ChartType_HalfDoughnut" xml:space="preserve">
+    <value>Half doughnut</value>
+  </data>
+  <data name="ChartType_Pie" xml:space="preserve">
+    <value>Pie</value>
+  </data>
+  <data name="ChartType_FunnelVertical" xml:space="preserve">
+    <value>Funnel vertical</value>
+  </data>
+  <data name="ChartType_FunnelHorizontal" xml:space="preserve">
+    <value>Funnel horizontal</value>
+  </data>
+  <data name="GroupByField" xml:space="preserve">
+    <value>Group by field</value>
+  </data>
+  <data name="Description_EnterTheLogicalNameOfTheFieldUsedForGrouping" xml:space="preserve">
+    <value>Enter the logical name of the field whose values should define the chart segments.</value>
+  </data>
+  <data name="AggregationMode" xml:space="preserve">
+    <value>Aggregation mode</value>
+  </data>
+  <data name="Description_SelectWhetherTheChartUsesSumOrAverage" xml:space="preserve">
+    <value>Select whether the numeric field should be aggregated as a sum or as an average for each group.</value>
+  </data>
+  <data name="AggregationMode_Sum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="AggregationMode_Average" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="ValueField" xml:space="preserve">
+    <value>Value field</value>
+  </data>
+  <data name="Description_EnterTheLogicalNameOfTheNumericFieldToAggregate" xml:space="preserve">
+    <value>Enter the logical name of the numeric field that should be summed or averaged.</value>
+  </data>
+  <data name="ShowDataNextToChart" xml:space="preserve">
+    <value>Show data next to chart</value>
+  </data>
+  <data name="Description_ShowDataNextToChart" xml:space="preserve">
+    <value>Show a small data grid to the right of the chart with the grouped values.</value>
+  </data>
+  <data name="Validation_DatasetRequired" xml:space="preserve">
+    <value>Select a dataset before the chart can be rendered.</value>
+  </data>
+  <data name="Validation_GroupByFieldRequired" xml:space="preserve">
+    <value>Enter a logical field name in Group by field.</value>
+  </data>
+  <data name="Validation_ValueFieldRequired" xml:space="preserve">
+    <value>Enter a logical field name in Value field.</value>
+  </data>
+  <data name="Validation_NoChartDataMessage" xml:space="preserve">
+    <value>No chart data is available for the current dataset and configuration.</value>
+  </data>
+  <data name="Validation_GenericConfigurationMessage" xml:space="preserve">
+    <value>Check the chart configuration. One or more settings could not be read, so the chart could not be rendered.</value>
+  </data>
+  <data name="GroupLabel_Empty" xml:space="preserve">
+    <value>(Empty)</value>
+  </data>
+  <data name="EmptyState_NoData" xml:space="preserve">
+    <value>No data</value>
+  </data>
+</root>

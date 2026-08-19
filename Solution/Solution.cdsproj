@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PowerAppsTargetsPath>$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\PowerApps</PowerAppsTargetsPath>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props')" />
+
+  <PropertyGroup>
+    <ProjectGuid>8b0decc9-e20e-4392-94c1-fc741ee8c913</ProjectGuid>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <!--Remove TargetFramework when this is available in 16.1-->
+    <TargetFramework>net462</TargetFramework>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <SolutionRootPath>src</SolutionRootPath>
+    <SolutionManifestPath>$(MSBuildThisFileDirectory)src\Other\Solution.xml</SolutionManifestPath>
+  </PropertyGroup>
+
+  <!-- 
+    Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both)
+    Solution Localization Control, if you want to enabled localization of your solution, un-comment SolutionPackageEnableLocalization and set the value to true. - Requires use of -loc flag on Solution Clone or Sync
+  -->
+  <!--
+  <PropertyGroup>
+    <SolutionPackageType>Managed</SolutionPackageType>
+    <SolutionPackageEnableLocalization>false</SolutionPackageEnableLocalization>
+  </PropertyGroup>
+  -->
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="1.*" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\.gitignore" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\bin\**" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\obj\**" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\*.cdsproj" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\*.cdsproj.user" />
+    <ExcludeDirectories Include="$(MSBuildThisFileDirectory)\*.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)\**" Exclude="@(ExcludeDirectories)" />
+    <Content Include="$(SolutionPackageZipFilePath)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="../components/RelatedRecordsCount/RelatedRecordsCount.pcfproj" />
+    <ProjectReference Include="../components/GroupedChart/GroupedChart.pcfproj" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+
+  <Target Name="RenameSolutionPackageWithVersion" AfterTargets="Build" Condition="Exists('$(SolutionPackageZipFilePath)') and Exists('$(SolutionManifestPath)')">
+    <XmlPeek XmlInputPath="$(SolutionManifestPath)" Query="/ImportExportXml/SolutionManifest/LocalizedNames/LocalizedName/@description">
+      <Output TaskParameter="Result" PropertyName="SolutionDisplayName" />
+    </XmlPeek>
+    <XmlPeek XmlInputPath="$(SolutionManifestPath)" Query="/ImportExportXml/SolutionManifest/Version/text()">
+      <Output TaskParameter="Result" PropertyName="SolutionVersion" />
+    </XmlPeek>
+
+    <PropertyGroup>
+      <VersionedSolutionPackagePath>$(OutputPath)$(SolutionDisplayName)_$(SolutionVersion).zip</VersionedSolutionPackagePath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <OldVersionedSolutionPackages Include="$(OutputPath)$(SolutionDisplayName)_*.zip" Exclude="$(VersionedSolutionPackagePath)" />
+    </ItemGroup>
+
+    <Delete Files="@(OldVersionedSolutionPackages)" />
+    <Delete Files="$(VersionedSolutionPackagePath)" Condition="Exists('$(VersionedSolutionPackagePath)')" />
+    <Move SourceFiles="$(SolutionPackageZipFilePath)" DestinationFiles="$(VersionedSolutionPackagePath)" />
+  </Target>
+
+  <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.targets" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.targets')" />
+
+</Project>

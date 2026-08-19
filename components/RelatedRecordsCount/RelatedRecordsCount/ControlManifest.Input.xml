@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Cyco77.PcfLib" constructor="RelatedRecordsCount" version="1.2.22" display-name-key="RelatedRecordsCount" description-key="RelatedRecordsCount description" control-type="standard" >
+    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+    Example1:
+      <external-service-usage enabled="true">
+        <domain>www.Microsoft.com</domain>
+      </external-service-usage>
+    Example2:
+      <external-service-usage enabled="false">
+      </external-service-usage>
+    -->
+    <external-service-usage enabled="false">
+      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <domain></domain>
+      <domain></domain>
+      -->
+    </external-service-usage>
+    <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
+    <data-set name="relatedRecords" display-name-key="RelatedRecords" description-key="Description_SelectTheRelatedTableAndViewToCount" cds-data-set-options="displayCommandBar:false;displayViewSelector:true;displayQuickFind:true">
+    </data-set>
+    <property name="colorMode" display-name-key="ColorMode" description-key="Description_SelectWhichStandardColorToUseForTheCount" of-type="Enum" usage="input" required="true">
+      <value name="BrandBlue" display-name-key="ColorMode_BrandBlue">0</value>
+      <value name="Slate" display-name-key="ColorMode_Slate">1</value>
+      <value name="Emerald" display-name-key="ColorMode_Emerald">2</value>
+      <value name="Violet" display-name-key="ColorMode_Violet">3</value>
+      <value name="Berry" display-name-key="ColorMode_Berry">4</value>
+      <value name="Amber" display-name-key="ColorMode_Amber">5</value>
+      <value name="Custom" display-name-key="ColorMode_Custom">6</value>
+    </property>
+    <property name="customColorHex" display-name-key="CustomColorHex" description-key="Description_EnterAHexColorWhenCustomColorIsSelected" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="subtitleMode" display-name-key="SubtitleMode" description-key="Description_SelectHowTheSubtitleShouldBeBuilt" of-type="Enum" usage="input" required="true">
+      <value name="None" display-name-key="SubtitleMode_None">0</value>
+      <value name="FreeText" display-name-key="SubtitleMode_FreeText">1</value>
+      <value name="ViewName" display-name-key="SubtitleMode_ViewName">2</value>
+      <value name="EntityAndView" display-name-key="SubtitleMode_EntityAndView">3</value>
+    </property>
+    <property name="subtitleText" display-name-key="SubtitleText" description-key="Description_EnterCustomSubtitleTextForFreeTextMode" of-type="SingleLine.Text" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <resx path="strings/RelatedRecordsCount.1033.resx" version="1.0.0" />
+      <resx path="strings/RelatedRecordsCount.1031.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

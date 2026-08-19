@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RelatedRecordsCount" xml:space="preserve">
+    <value>Related Records Count</value>
+  </data>
+  <data name="RelatedRecordsCount description" xml:space="preserve">
+    <value>Displays the number of records in the configured related table view.</value>
+  </data>
+  <data name="RelatedRecords" xml:space="preserve">
+    <value>Related records</value>
+  </data>
+  <data name="Description_SelectTheRelatedTableAndViewToCount" xml:space="preserve">
+    <value>Select the related table and view whose records should be counted by the component.</value>
+  </data>
+  <data name="ColorMode" xml:space="preserve">
+    <value>Number color</value>
+  </data>
+  <data name="Description_SelectWhichStandardColorToUseForTheCount" xml:space="preserve">
+    <value>Select the color used for the displayed count.</value>
+  </data>
+  <data name="ColorMode_BrandBlue" xml:space="preserve">
+    <value>Brand blue</value>
+  </data>
+  <data name="ColorMode_Slate" xml:space="preserve">
+    <value>Slate</value>
+  </data>
+  <data name="ColorMode_Emerald" xml:space="preserve">
+    <value>Emerald</value>
+  </data>
+  <data name="ColorMode_Violet" xml:space="preserve">
+    <value>Violet</value>
+  </data>
+  <data name="ColorMode_Berry" xml:space="preserve">
+    <value>Berry</value>
+  </data>
+  <data name="ColorMode_Amber" xml:space="preserve">
+    <value>Amber</value>
+  </data>
+  <data name="ColorMode_Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="CustomColorHex" xml:space="preserve">
+    <value>Custom color hex</value>
+  </data>
+  <data name="Description_EnterAHexColorWhenCustomColorIsSelected" xml:space="preserve">
+    <value>Required only when Number color is set to Custom. Enter a hex color like #0f6cbd.</value>
+  </data>
+  <data name="SubtitleMode" xml:space="preserve">
+    <value>Subtitle mode</value>
+  </data>
+  <data name="Description_SelectHowTheSubtitleShouldBeBuilt" xml:space="preserve">
+    <value>Select whether no subtitle is shown, a custom subtitle is shown, the current view name is shown, or the localized entity name together with the current view name is shown.</value>
+  </data>
+  <data name="SubtitleMode_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="SubtitleMode_FreeText" xml:space="preserve">
+    <value>Free text</value>
+  </data>
+  <data name="SubtitleMode_ViewName" xml:space="preserve">
+    <value>View name</value>
+  </data>
+  <data name="SubtitleMode_EntityAndView" xml:space="preserve">
+    <value>Entity | View name</value>
+  </data>
+  <data name="SubtitleText" xml:space="preserve">
+    <value>Subtitle text</value>
+  </data>
+  <data name="Description_EnterCustomSubtitleTextForFreeTextMode" xml:space="preserve">
+    <value>Required only when Subtitle mode is set to Free text. The value is also used as a fallback if no entity or view label can be resolved.</value>
+  </data>
+  <data name="Validation_CustomColorHexRequired" xml:space="preserve">
+    <value>Select a hex color in Custom color hex when Number color is set to Custom.</value>
+  </data>
+  <data name="Validation_CustomColorHexInvalid" xml:space="preserve">
+    <value>Custom color hex must be a valid hex value like #0f6cbd or #06c.</value>
+  </data>
+  <data name="Validation_SubtitleTextRequired" xml:space="preserve">
+    <value>Enter a Subtitle text when Subtitle mode is set to Free text.</value>
+  </data>
+  <data name="Validation_GenericConfigurationMessage" xml:space="preserve">
+    <value>Check the component configuration. One or more optional settings could not be read, so safe defaults are being used.</value>
+  </data>
+</root>

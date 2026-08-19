@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UkcpPtNBVA0=",
+  "success": true,
+  "projectFilePath": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
+  "expectedPackageFiles": [
+    "/Users/lars.hildebrandt/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.0/microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "/Users/lars.hildebrandt/.nuget/packages/microsoft.netframework.referenceassemblies.net462/1.0.0/microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",
+    "/Users/lars.hildebrandt/.nuget/packages/microsoft.powerapps.msbuild.pcf/1.52.1/microsoft.powerapps.msbuild.pcf.1.52.1.nupkg.sha512"
+  ],
+  "logs": []
+}

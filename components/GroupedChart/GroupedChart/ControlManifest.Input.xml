@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Cyco77.PcfLib" constructor="GroupedChart" version="1.2.22" display-name-key="GroupedChart" description-key="GroupedChartDescription" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <data-set name="chartData" display-name-key="ChartData" description-key="Description_SelectTheTableAndViewToVisualize" cds-data-set-options="displayCommandBar:false;displayViewSelector:true;displayQuickFind:true">
+    </data-set>
+    <property name="chartType" display-name-key="ChartType" description-key="Description_SelectWhichChartTypeShouldBeRendered" of-type="Enum" usage="input" required="true">
+      <value name="Doughnut" display-name-key="ChartType_Doughnut">0</value>
+      <value name="HalfDoughnut" display-name-key="ChartType_HalfDoughnut">1</value>
+      <value name="Pie" display-name-key="ChartType_Pie">2</value>
+      <value name="FunnelVertical" display-name-key="ChartType_FunnelVertical">3</value>
+      <value name="FunnelHorizontal" display-name-key="ChartType_FunnelHorizontal">4</value>
+    </property>
+    <property name="groupByField" display-name-key="GroupByField" description-key="Description_EnterTheLogicalNameOfTheFieldUsedForGrouping" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="aggregationMode" display-name-key="AggregationMode" description-key="Description_SelectWhetherTheChartUsesSumOrAverage" of-type="Enum" usage="input" required="true">
+      <value name="Sum" display-name-key="AggregationMode_Sum">0</value>
+      <value name="Average" display-name-key="AggregationMode_Average">1</value>
+    </property>
+    <property name="valueField" display-name-key="ValueField" description-key="Description_EnterTheLogicalNameOfTheNumericFieldToAggregate" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="showDataNextToChart" display-name-key="ShowDataNextToChart" description-key="Description_ShowDataNextToChart" of-type="TwoOptions" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <resx path="strings/GroupedChart.1033.resx" version="1.0.0" />
+      <resx path="strings/GroupedChart.1031.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

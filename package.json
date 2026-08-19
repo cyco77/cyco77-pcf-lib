@@ -1,0 +1,11 @@
+{
+  "name": "cyco77-pcf-lib",
+  "version": "1.2.22",
+  "private": true,
+  "scripts": {
+    "build": "npm run version:build && dotnet build ./Solution/Solution.cdsproj -c Release",
+    "version:build": "node ./scripts/bump-version.mjs patch",
+    "version:minor": "node ./scripts/bump-version.mjs minor",
+    "version:major": "node ./scripts/bump-version.mjs major"
+  }
+}
