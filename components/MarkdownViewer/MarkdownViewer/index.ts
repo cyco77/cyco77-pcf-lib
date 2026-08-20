@@ -4,10 +4,9 @@ import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import Main from "./components/main";
 import { applyBackgroundVisibility, resolveTwoOptionsValue } from "../../shared/theme";
 
-export class RelatedRecordsCount implements ComponentFramework.StandardControl<
-  IInputs,
-  IOutputs
-> {
+export class MarkdownViewer
+  implements ComponentFramework.StandardControl<IInputs, IOutputs>
+{
   private container!: HTMLDivElement;
   private root?: Root;
 

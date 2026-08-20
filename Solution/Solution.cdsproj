@@ -52,6 +52,7 @@
   <ItemGroup>
     <ProjectReference Include="../components/RelatedRecordsCount/RelatedRecordsCount.pcfproj" />
     <ProjectReference Include="../components/GroupedChart/GroupedChart.pcfproj" />
+    <ProjectReference Include="../components/MarkdownViewer/MarkdownViewer.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />

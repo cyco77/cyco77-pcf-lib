@@ -10,6 +10,7 @@ export interface RelatedRecordsCountViewProps {
   subtitle: string;
   message: string;
   isLoading: boolean;
+  showBackgroundColor: boolean;
 }
 
 const containerStyle: React.CSSProperties = {
@@ -76,9 +77,16 @@ const RelatedRecordsCountView: React.FC<RelatedRecordsCountViewProps> = ({
   subtitle,
   message,
   isLoading,
+  showBackgroundColor,
 }: RelatedRecordsCountViewProps) => {
+  const resolvedContainerStyle: React.CSSProperties = {
+    ...containerStyle,
+    background: showBackgroundColor ? semanticColors.surface : "transparent",
+    border: showBackgroundColor ? `1px solid ${semanticColors.surfaceBorder}` : "none",
+  };
+
   return (
-    <div className="related-records-count" style={containerStyle}>
+    <div className="related-records-count" style={resolvedContainerStyle}>
       {isLoading ? (
         <div style={loadingContainerStyle}>
           <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">

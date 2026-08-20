@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Cyco77.PcfLib" constructor="GroupedChart" version="1.2.22" display-name-key="GroupedChart" description-key="GroupedChartDescription" control-type="standard" >
+  <control namespace="Cyco77.PcfLib" constructor="GroupedChart" version="1.2.30" display-name-key="GroupedChart" description-key="GroupedChartDescription" control-type="standard" >
     <external-service-usage enabled="false">
     </external-service-usage>
     <data-set name="chartData" display-name-key="ChartData" description-key="Description_SelectTheTableAndViewToVisualize" cds-data-set-options="displayCommandBar:false;displayViewSelector:true;displayQuickFind:true">
@@ -19,6 +19,7 @@
     </property>
     <property name="valueField" display-name-key="ValueField" description-key="Description_EnterTheLogicalNameOfTheNumericFieldToAggregate" of-type="SingleLine.Text" usage="input" required="true" />
     <property name="showDataNextToChart" display-name-key="ShowDataNextToChart" description-key="Description_ShowDataNextToChart" of-type="TwoOptions" usage="input" required="false" />
+    <property name="showBackgroundColor" display-name-key="ShowBackgroundColor" description-key="Description_ShowBackgroundColor" of-type="TwoOptions" usage="input" required="false" />
     <resources>
       <code path="index.ts" order="1"/>
       <resx path="strings/GroupedChart.1033.resx" version="1.0.0" />

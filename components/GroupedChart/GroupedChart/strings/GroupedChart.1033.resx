@@ -75,6 +75,12 @@
   <data name="Description_ShowDataNextToChart" xml:space="preserve">
     <value>Show a small data grid to the right of the chart with the grouped values.</value>
   </data>
+  <data name="ShowBackgroundColor" xml:space="preserve">
+    <value>Show background color</value>
+  </data>
+  <data name="Description_ShowBackgroundColor" xml:space="preserve">
+    <value>When enabled, the component shows its background color. When disabled, the background is transparent.</value>
+  </data>
   <data name="Validation_DatasetRequired" xml:space="preserve">
     <value>Select a dataset before the chart can be rendered.</value>
   </data>

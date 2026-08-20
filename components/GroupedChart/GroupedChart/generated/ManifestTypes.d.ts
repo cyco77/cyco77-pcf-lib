@@ -9,6 +9,7 @@ export interface IInputs {
     aggregationMode: ComponentFramework.PropertyTypes.EnumProperty<"0" | "1">;
     valueField: ComponentFramework.PropertyTypes.StringProperty;
     showDataNextToChart: ComponentFramework.PropertyTypes.TwoOptionsProperty;
+    showBackgroundColor: ComponentFramework.PropertyTypes.TwoOptionsProperty;
     chartData: ComponentFramework.PropertyTypes.DataSet;
 }
 export interface IOutputs {

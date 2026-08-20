@@ -1,4 +1,5 @@
 import type { IInputs } from "../generated/ManifestTypes";
+import { resolveTwoOptionsValue } from "../../../shared/theme";
 
 export interface ResolvedRecordCount {
   value: number;
@@ -25,6 +26,14 @@ export function getEnumValue(
   const numericValue = typeof rawValue === "number" ? rawValue : Number(rawValue);
 
   return Number.isFinite(numericValue) ? numericValue : fallbackValue;
+}
+
+export function getBooleanValue(
+  context: ComponentFramework.Context<IInputs>,
+  parameterName: "showBackgroundColor",
+  fallbackValue: boolean,
+): boolean {
+  return resolveTwoOptionsValue(context.parameters[parameterName], fallbackValue);
 }
 
 export function getResourceString(context: ComponentFramework.Context<IInputs>, key: string): string {

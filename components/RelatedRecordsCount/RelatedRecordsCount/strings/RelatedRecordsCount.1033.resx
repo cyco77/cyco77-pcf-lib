@@ -81,6 +81,12 @@
   <data name="Description_EnterCustomSubtitleTextForFreeTextMode" xml:space="preserve">
     <value>Required only when Subtitle mode is set to Free text. The value is also used as a fallback if no entity or view label can be resolved.</value>
   </data>
+  <data name="ShowBackgroundColor" xml:space="preserve">
+    <value>Show background color</value>
+  </data>
+  <data name="Description_ShowBackgroundColor" xml:space="preserve">
+    <value>When enabled, the component shows its background color. When disabled, the background is transparent.</value>
+  </data>
   <data name="Validation_CustomColorHexRequired" xml:space="preserve">
     <value>Select a hex color in Custom color hex when Number color is set to Custom.</value>
   </data>

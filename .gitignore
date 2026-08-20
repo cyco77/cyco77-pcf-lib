@@ -2,13 +2,17 @@
 
 # dependencies
 /node_modules
+/**/node_modules
 
 # output directory
 /out
+/**/out
 
 # msbuild output directories
 /bin
+/**/bin
 /obj
+/**/obj
 
 # MSBuild Binary and Structured Log
 *.binlog

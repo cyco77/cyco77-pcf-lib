@@ -9,6 +9,7 @@ export interface GroupedChartViewProps {
   canvasRef: React.RefObject<HTMLCanvasElement>;
   isHalfDoughnut: boolean;
   showDataGrid: boolean;
+  showBackgroundColor: boolean;
   rows: AggregatedChartRow[];
   groupByDisplayName: string;
   valueFieldDisplayName: string;
@@ -153,6 +154,7 @@ const GroupedChartView: React.FC<GroupedChartViewProps> = ({
   canvasRef,
   isHalfDoughnut,
   showDataGrid,
+  showBackgroundColor,
   rows,
   groupByDisplayName,
   valueFieldDisplayName,
@@ -160,9 +162,14 @@ const GroupedChartView: React.FC<GroupedChartViewProps> = ({
   const canvasWrapperStyle = isHalfDoughnut
     ? halfDoughnutCanvasWrapperStyle
     : chartCanvasWrapperStyle;
+  const resolvedContainerStyle: React.CSSProperties = {
+    ...containerStyle,
+    background: showBackgroundColor ? semanticColors.surface : "transparent",
+    border: showBackgroundColor ? `1px solid ${semanticColors.surfaceBorder}` : "none",
+  };
 
   return (
-    <div className="grouped-pie-chart" style={containerStyle}>
+    <div className="grouped-pie-chart" style={resolvedContainerStyle}>
       {!showMessage && (
         <div style={contentStyle}>
           <div style={chartPanelStyle}>

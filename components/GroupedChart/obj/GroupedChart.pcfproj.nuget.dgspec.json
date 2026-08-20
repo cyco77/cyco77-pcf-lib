@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj": {}
+    "/Users/lars.hildebrandt/dev/OpenSource/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj": {}
   },
   "projects": {
-    "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj": {
+    "/Users/lars.hildebrandt/dev/OpenSource/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
+        "projectUniqueName": "/Users/lars.hildebrandt/dev/OpenSource/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
         "projectName": "GroupedChart",
-        "projectPath": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
+        "projectPath": "/Users/lars.hildebrandt/dev/OpenSource/cyco77-pcf-lib/components/GroupedChart/GroupedChart.pcfproj",
         "packagesPath": "/Users/lars.hildebrandt/.nuget/packages/",
-        "outputPath": "/Users/lars.hildebrandt/dev/cyco/cyco77-pcf-lib/components/GroupedChart/obj/",
+        "outputPath": "/Users/lars.hildebrandt/dev/OpenSource/cyco77-pcf-lib/components/GroupedChart/obj/",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [

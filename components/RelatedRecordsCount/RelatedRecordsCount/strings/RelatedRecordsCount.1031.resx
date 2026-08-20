@@ -81,6 +81,12 @@
   <data name="Description_EnterCustomSubtitleTextForFreeTextMode" xml:space="preserve">
     <value>Nur erforderlich, wenn Freitext als Untertitelmodus gewaehlt ist. Der Wert dient ausserdem als Rueckfalltext, wenn kein Entitaets- oder Ansichtsname verfuegbar ist.</value>
   </data>
+  <data name="ShowBackgroundColor" xml:space="preserve">
+    <value>Hintergrundfarbe anzeigen</value>
+  </data>
+  <data name="Description_ShowBackgroundColor" xml:space="preserve">
+    <value>Wenn aktiviert, zeigt die Komponente ihre Hintergrundfarbe an. Wenn deaktiviert, ist der Hintergrund transparent.</value>
+  </data>
   <data name="Validation_CustomColorHexRequired" xml:space="preserve">
     <value>Geben Sie einen Hex-Farbwert an, wenn Benutzerdefiniert als Farbe gewaehlt ist.</value>
   </data>

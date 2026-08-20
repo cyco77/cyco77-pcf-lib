@@ -2,6 +2,7 @@ import * as React from "react";
 import { createRoot, Root } from "react-dom/client";
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import Main from "./components/main";
+import { applyBackgroundVisibility, resolveTwoOptionsValue } from "../../shared/theme";
 
 export class GroupedChart
   implements ComponentFramework.StandardControl<IInputs, IOutputs>
@@ -41,6 +42,12 @@ export class GroupedChart
   }
 
   private render(context: ComponentFramework.Context<IInputs>): void {
+    const showBackgroundColor = resolveTwoOptionsValue(
+      context.parameters.showBackgroundColor,
+      true,
+    );
+
+    applyBackgroundVisibility(this.container, showBackgroundColor);
     this.root?.render(
       React.createElement(Main, {
         context,

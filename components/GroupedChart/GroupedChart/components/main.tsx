@@ -25,6 +25,7 @@ const Main: React.FC<IMainProps> = ({ context }) => {
   const groupByField = getTextValue(context, "groupByField");
   const valueField = getTextValue(context, "valueField");
   const showDataNextToChart = getBooleanValue(context, "showDataNextToChart");
+  const showBackgroundColor = getBooleanValue(context, "showBackgroundColor", true);
   const validationMessage = getValidationMessage(context, groupByField, valueField);
 
   let showMessage = false;
@@ -90,6 +91,7 @@ const Main: React.FC<IMainProps> = ({ context }) => {
       canvasRef={canvasRef}
       isHalfDoughnut={Boolean(chartVariant?.halfDoughnut)}
       showDataGrid={showDataNextToChart}
+      showBackgroundColor={showBackgroundColor}
       rows={chartData?.rows || []}
       groupByDisplayName={chartData?.groupByDisplayName || groupByField}
       valueFieldDisplayName={chartData?.valueFieldDisplayName || valueField}

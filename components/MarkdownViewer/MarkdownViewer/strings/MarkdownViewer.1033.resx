@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MarkdownViewer" xml:space="preserve">
+    <value>Markdown Viewer</value>
+  </data>
+  <data name="MarkdownViewerDescription" xml:space="preserve">
+    <value>Renders markdown from a bound multiline text field.</value>
+  </data>
+  <data name="MarkdownValue" xml:space="preserve">
+    <value>Markdown</value>
+  </data>
+  <data name="MarkdownValueDescription" xml:space="preserve">
+    <value>Bound multiline text field containing markdown content.</value>
+  </data>
+  <data name="MarkdownText" xml:space="preserve">
+    <value>Manual markdown</value>
+  </data>
+  <data name="MarkdownTextDescription" xml:space="preserve">
+    <value>Optional markdown entered directly in the control configuration. If empty, the bound field value is used.</value>
+  </data>
+  <data name="ShowBackgroundColor" xml:space="preserve">
+    <value>Show background color</value>
+  </data>
+  <data name="Description_ShowBackgroundColor" xml:space="preserve">
+    <value>When enabled, the component shows its background color. When disabled, the background is transparent.</value>
+  </data>
+</root>

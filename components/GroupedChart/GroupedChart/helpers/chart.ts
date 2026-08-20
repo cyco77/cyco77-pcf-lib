@@ -1,6 +1,6 @@
 import { ArcElement, CategoryScale, Chart, Colors, Legend, LinearScale, PieController, Tooltip, type ChartOptions, type TooltipItem } from "chart.js";
 import { FunnelController, TrapezoidElement } from "chartjs-chart-funnel";
-import { chartPalette, semanticColors } from "../../../shared/theme";
+import { chartPalette, resolveTwoOptionsValue, semanticColors } from "../../../shared/theme";
 import type { IInputs } from "../generated/ManifestTypes";
 import { aggregationModes, chartTypes, type AggregatedChartData, type AggregatedChartRow, type ChartVariant, type GroupedValue, type SupportedChartType } from "../types/chart";
 
@@ -168,13 +168,10 @@ export function getTextValue(
 
 export function getBooleanValue(
   context: GroupedChartContext,
-  parameterName: "showDataNextToChart",
+  parameterName: "showDataNextToChart" | "showBackgroundColor",
+  fallbackValue = false,
 ): boolean {
-  const parameter = context.parameters[parameterName] as
-    | ComponentFramework.PropertyTypes.TwoOptionsProperty
-    | undefined;
-
-  return parameter?.raw === true;
+  return resolveTwoOptionsValue(context.parameters[parameterName], fallbackValue);
 }
 
 export function getEnumValue(

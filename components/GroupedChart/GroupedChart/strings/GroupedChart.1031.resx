@@ -75,6 +75,12 @@
   <data name="Description_ShowDataNextToChart" xml:space="preserve">
     <value>Zeigt rechts neben dem Diagramm ein kleines Datenraster mit den gruppierten Werten an.</value>
   </data>
+  <data name="ShowBackgroundColor" xml:space="preserve">
+    <value>Hintergrundfarbe anzeigen</value>
+  </data>
+  <data name="Description_ShowBackgroundColor" xml:space="preserve">
+    <value>Wenn aktiviert, zeigt die Komponente ihre Hintergrundfarbe an. Wenn deaktiviert, ist der Hintergrund transparent.</value>
+  </data>
   <data name="Validation_DatasetRequired" xml:space="preserve">
     <value>Waehlen Sie zuerst ein Dataset aus, bevor das Diagramm dargestellt werden kann.</value>
   </data>

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { IInputs } from "../generated/ManifestTypes";
 import { accentColors } from "../../../shared/theme";
 import {
+  getBooleanValue,
   getEnumValue,
   getLocalizedLabel,
   getResolvedRecordCount,
@@ -160,6 +161,7 @@ const Main: React.FC<IMainProps> = ({ context }) => {
         subtitle={validationMessage ? "" : getSubtitleText(relatedTableName, viewName)}
         message={validationMessage}
         isLoading={!validationMessage && isLoading}
+        showBackgroundColor={getBooleanValue(context, "showBackgroundColor", true)}
       />
     );
   } catch {
@@ -170,6 +172,7 @@ const Main: React.FC<IMainProps> = ({ context }) => {
         subtitle=""
         message={getResourceString(context, "Validation_GenericConfigurationMessage")}
         isLoading={false}
+        showBackgroundColor={true}
       />
     );
   }
