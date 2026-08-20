@@ -30,7 +30,7 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Install root dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build solution
         run: npm run build

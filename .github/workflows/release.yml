@@ -32,6 +32,12 @@ jobs:
           test "$(git branch --show-current)" = "main"
           test "${GITHUB_REF_NAME}" = "main"
 
+      - name: Verify clean checkout
+        run: |
+          git update-index -q --refresh
+          git diff --quiet
+          git diff --cached --quiet
+
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
@@ -44,13 +50,7 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Install root dependencies
-        run: npm install
-
-      - name: Verify clean working tree
-        run: |
-          git update-index -q --refresh
-          git diff --quiet
-          git diff --cached --quiet
+        run: npm ci
 
       - name: Bump version
         run: npm run version:${{ inputs.release_type }}
