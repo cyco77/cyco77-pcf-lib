@@ -2,6 +2,8 @@
 
 PCF library for Dataverse / model-driven apps with multiple controls bundled into a single solution.
 
+Detailed project documentation lives under [`docs/`](./docs/index.md).
+
 ## Contents
 
 - `Solution/`: Dataverse solution project `cyco77_pcf_lib`
