@@ -1,0 +1,83 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: Version increment type
+        required: true
+        default: patch
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify main branch
+        run: |
+          test "$(git branch --show-current)" = "main"
+          test "${GITHUB_REF_NAME}" = "main"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install root dependencies
+        run: npm install
+
+      - name: Verify clean working tree
+        run: |
+          git update-index -q --refresh
+          git diff --quiet
+          git diff --cached --quiet
+
+      - name: Bump version
+        run: npm run version:${{ inputs.release_type }}
+
+      - name: Build solution
+        run: npm run build
+
+      - name: Read version
+        id: version
+        run: echo "version=$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+
+      - name: Commit release version
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json Solution/src/Other/Solution.xml components/*/package.json components/*/*/ControlManifest.Input.xml
+          git diff --cached --quiet || git commit -m "chore: release v${{ steps.version.outputs.version }}"
+
+      - name: Create git tag
+        run: git tag "v${{ steps.version.outputs.version }}"
+
+      - name: Push commit and tag
+        run: git push origin main && git push origin "v${{ steps.version.outputs.version }}"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: v${{ steps.version.outputs.version }}
+          files: Solution/bin/Release/*.zip
