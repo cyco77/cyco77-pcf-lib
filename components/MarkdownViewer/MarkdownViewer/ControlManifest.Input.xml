@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Cyco77.PcfLib" constructor="MarkdownViewer" version="1.2.30" display-name-key="MarkdownViewer" description-key="MarkdownViewerDescription" control-type="standard" >
+  <control namespace="Cyco77.PcfLib" constructor="MarkdownViewer" version="1.2.31" display-name-key="MarkdownViewer" description-key="MarkdownViewerDescription" control-type="standard" >
     <external-service-usage enabled="false">
     </external-service-usage>
     <property name="value" display-name-key="MarkdownValue" description-key="MarkdownValueDescription" of-type="Multiple" usage="bound" required="true" />

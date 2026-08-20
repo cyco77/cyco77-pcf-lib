@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="Cyco77.PcfLib" constructor="GroupedChart" version="1.2.30" display-name-key="GroupedChart" description-key="GroupedChartDescription" control-type="standard" >
+  <control namespace="Cyco77.PcfLib" constructor="GroupedChart" version="1.2.31" display-name-key="GroupedChart" description-key="GroupedChartDescription" control-type="standard" >
     <external-service-usage enabled="false">
     </external-service-usage>
     <data-set name="chartData" display-name-key="ChartData" description-key="Description_SelectTheTableAndViewToVisualize" cds-data-set-options="displayCommandBar:false;displayViewSelector:true;displayQuickFind:true">

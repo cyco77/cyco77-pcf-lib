@@ -19,3 +19,6 @@
 
 # macOS
 .DS_Store
+
+# AI Stuff
+.opencode
